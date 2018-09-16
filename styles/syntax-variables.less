@@ -5,24 +5,24 @@
 
 // General colors
 @syntax-text-color: @very-light-gray;
-@syntax-cursor-color: @teal;
-@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-cursor-color: @orange;
 @syntax-background-color: @very-dark-gray;
-@syntax-comment-color: lighten(@very-dark-gray, 20%);
+@syntax-selection-color: lighten(@syntax-background-color, 7%);
+@syntax-comment-color: lighten(@syntax-background-color, 20%);
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
 @syntax-indent-guide-color: lighten(@syntax-background-color, 2.5%);
-@syntax-invisible-character-color: @gray;
+@syntax-invisible-character-color: lighten(@syntax-background-color, 10%);
 
 // For find and replace markers
 @syntax-result-marker-color: @light-gray;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: fade(@syntax-text-color, 20%);
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @syntax-background-color;
+@syntax-gutter-text-color: @syntax-comment-color;
+@syntax-gutter-text-color-selected: @syntax-cursor-color;
+@syntax-gutter-background-color: darken(@syntax-background-color, 2%);
 @syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
 
 // For git diff info. i.e. in the gutter
